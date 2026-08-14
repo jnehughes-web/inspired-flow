@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --color-abyss: #04060f;
+  --color-deep: #0a1224;
+  --color-surface: #0e1a30;
+  --color-fg: #e8f4ff;
+  --color-muted: #7a9bb8;
+  --color-cyan: #3de0ff;
+  --color-amber: #ffc857;
+  --color-magenta: #ff6bcb;
+  --color-mint: #5dffb0;
+  --color-danger: #ff5a6a;
+  --color-orb-red: #ff4d6d;
+  --color-orb-blue: #4db8ff;
+  --color-gold: #ffe08a;
+  --font-display: "Segoe UI", "Inter", system-ui, sans-serif;
+  --font-sans: "Segoe UI", "Inter", system-ui, sans-serif;
+  --radius-pill: 999px;
+}
+
+@layer base {
+  html,
+  body,
+  #root {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    background: var(--color-abyss);
+    color: var(--color-fg);
+    font-family: var(--font-sans);
+    -webkit-tap-highlight-color: transparent;
+    overscroll-behavior: none;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+@layer utilities {
+  .drift-overlay {
+    pointer-events: none;
+  }
+  .drift-overlay button,
+  .drift-overlay [data-interactive] {
+    pointer-events: auto;
+  }
+}
