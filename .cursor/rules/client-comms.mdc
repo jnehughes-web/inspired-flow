@@ -1,0 +1,15 @@
+---
+description: How to write summaries and commit messages for client-facing freelance work
+globs:
+  - "**/*"
+alwaysApply: false
+---
+
+# Client-facing communication
+
+When drafting PR descriptions, commit messages, or handoff notes:
+
+- Lead with user-visible outcome, not toolchain details
+- Call out risk (auth, payments, data loss) explicitly
+- Include a short manual test checklist
+- Never mention internal QA persona IDs or seed-account emails in customer-facing copy

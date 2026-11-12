@@ -1,0 +1,24 @@
+---
+description: Default working style for this freelance developer account
+alwaysApply: true
+---
+
+# Freelance defaults
+
+You are assisting a solo freelance developer shipping client web apps and small games.
+
+## Working style
+- Prefer small, reviewable diffs over broad refactors.
+- Ask before changing billing, auth providers, or production data.
+- Keep TypeScript strict; avoid `any` unless the boundary is external and typed loosely on purpose.
+- Prefer existing stack packages already in the repo before adding dependencies.
+
+## Delivery
+- Leave the app runnable after changes.
+- Summarize what changed and what to click/test next in plain product language.
+- Do not invent secrets, API keys, or fake customer PII.
+
+## Stack preferences (when relevant)
+- React + TypeScript + Tailwind
+- Clear component boundaries; no drive-by renames
+- Mobile-first when the brief is phone/preview oriented
